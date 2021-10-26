@@ -1,0 +1,36 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Login Form -->
+    <div>
+      <h1>Registro</h1>
+    </div>
+
+    <ion-input
+      type="text"
+      id="login"
+      class="fadeIn second"
+      name="login"
+      placeholder="user"
+      [(ngModel)]="userDefault"
+    >
+    </ion-input>
+
+    <ion-input
+      type="text"
+      id="password"
+      class="fadeIn third"
+      name="login"
+      placeholder="password"
+      [(ngModel)]="passDefault"
+    ></ion-input>
+
+    <ion-input
+      type="button"
+      (click)="goAnOtherPage()"
+      class="fadeIn fourth"
+      value="Log In"
+    ></ion-input>
+  </div>
+</div>
